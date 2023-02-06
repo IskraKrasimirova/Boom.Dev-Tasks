@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import "~bulma/bulma";
+
+/* Core variables */
+@import "base/vars";
+
+/* CSS Reset */
+@import "base/reset";
+
+/* Fonts */
+@import "base/fonts";
+
+/* Mixins, helpers and functions */
+@import "base/mixins";
+
+html {
+  font-family: laca;
+  background: $background;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  margin: 0px !important;
+  padding: 10px;
+  justify-content: center;
+}
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
+  background-color: $grey-light;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 30px;
+  padding-top: 5px;
+  align-self: center;
+}
+
+.navbar-item {
+  background: $grey-light;
+  text-align: start;
+  color: $dark;
+  font-weight: 700;
+}
+img {
+  width: 200px;
+}
+
+.closed {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.picture {
+  margin-top: 25px;
+  align-self: center;
+  padding: 20px;
+}
+
+.description {
+  text-align: center;
+  font-weight: 500;
+  padding: 30px;
+}
+
+.goal {
+  margin-top: 10px;
+  text-align: center;
+  padding: 30px;
+}
+
+.label {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  .buttons {
+    background: $white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      margin: 10px;
+      border: none;
+    }
+  }
+}
